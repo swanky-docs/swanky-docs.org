@@ -2,6 +2,7 @@
 *.sublime-*
 _gh_pages
 node_modules
+docs
 npm-debug.log
 temp
 tmp
