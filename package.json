@@ -1,0 +1,30 @@
+{
+  "name": "swanky-docs.org",
+  "description": "Swanky Docs Website",
+  "scripts": {
+    "start": "NODE_ENV=development node src/config/start/serve.dev.js",
+    "prebuild": "rimraf docs/",
+    "build": "npm run build:prod",
+    "build:serve": "npm-run-all build serve:prod",
+    "build:prod": "NODE_ENV=production webpack -p --progress --config src/config/build/build.prod.js --profile --colors",
+    "serve:prod": "http-server docs -o"
+  },
+  "dependencies": {
+    "lodash": "4.17.2",
+    "pixi.js": "^4.1.0",
+    "prismjs": "1.6.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "graceful-fs": "4.1.11",
+    "http-server": "0.9.0",
+    "ify-loader": "1.0.3",
+    "npm-run-all": "3.1.2",
+    "rimraf": "2.5.4",
+    "swanky": "2.0.2",
+    "webpack": "^2.2.0-rc"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

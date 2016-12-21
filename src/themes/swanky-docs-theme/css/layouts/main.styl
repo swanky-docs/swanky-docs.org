@@ -1,0 +1,27 @@
+// Base
+html, body
+  height 100%
+
+html
+  font-size 62.5%
+
+body
+  font-size $base-font-size
+  padding-top 100px
+  font-weight 300
+  font-family 'Open Sans', sans-serif
+
+
+.content
+  position relative
+  max-width 960px
+  margin 0 auto
+  padding 60px 20px;
+
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    padding 60px 40px
+
+  &:after
+    content ''
+    display table
+    clear both

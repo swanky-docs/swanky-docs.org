@@ -1,0 +1,36 @@
+.steps-container
+  @media screen and (min-width: $screen-is-bigger-than-mobile)
+    padding-left 20px
+
+.step
+  position relative
+  padding-bottom 40px
+
+  @media screen and (min-width: $screen-is-bigger-than-mobile)
+    border-left 1px solid $grey-light
+    padding-bottom 80px
+    padding-left 40px
+
+  &.step-last
+    border-left none
+
+  &:after
+    content ''
+    display table
+    clear both
+
+.step
+  .hexagon-wrapper
+    background #fff
+    padding 10px
+
+    @media screen and (min-width: $screen-is-bigger-than-mobile)
+      left -30px
+      top 0
+      position absolute
+
+  .hexagon-md
+    color #fff
+    font-weight: 600
+    text-align center
+    line-height 40px

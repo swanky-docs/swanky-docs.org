@@ -1,0 +1,11 @@
+title                   : Swanky Docs
+repo                    : https://github.com/swanky-docs/generator-swanky
+version                 : 0.0.0
+src                     : src
+theme                   : src/themes/swanky-docs-theme
+output                  : docs
+
+sections                :
+
+  - title               : Welcome
+    content             : src/content/splash/**/*.html

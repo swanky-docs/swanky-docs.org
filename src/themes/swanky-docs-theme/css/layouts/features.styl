@@ -1,0 +1,59 @@
+// Flex structure
+.flex-wrapper
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    display flex
+
+.feature-container
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    &:nth-child(odd)
+      .flex-wrapper
+        flex-direction row-reverse
+
+.feature-icon-container
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    align-self center
+    flex: 2 50%;
+
+.content-block
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    flex: 2 50%;
+
+// Elements
+.feature-container
+  border-top 1px solid $grey-light
+  .hexagon-lg
+    top 0
+    transform translate(0, -50%);
+    right 0
+    position absolute
+  &:nth-child(odd)
+    background $grey-lightest
+    .hexagon-lg
+      left 0
+
+// Feature Icons
+.feature-icon
+  margin 0 auto 40px auto
+  background-size: @width @height
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    margin 0 auto
+
+.feature-icon-blocks
+  background url(../img/blocks.svg) no-repeat
+  width 119px
+  height 109px;
+
+.feature-icon-themeable
+  background url(../img/themeable.svg) no-repeat
+  width 93px
+  height 110px;
+
+.feature-icon-snippets
+  background url(../img/snippets.svg) no-repeat
+  width 139px
+  height 99px;
+
+.feature-icon-future
+  background url(../img/future.svg) no-repeat
+  width 145px
+  height 108px;

@@ -1,0 +1,11 @@
+*.DS_Store
+*.sublime-*
+_gh_pages
+node_modules
+npm-debug.log
+temp
+tmp
+vendor
+.idea
+benchmark
+coverage

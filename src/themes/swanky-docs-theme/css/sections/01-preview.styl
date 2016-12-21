@@ -1,0 +1,52 @@
+.section-preview
+  text-align center
+
+  .screenshot
+    background url('../img/screenshot.jpg') top left no-repeat
+    background-size cover
+
+  .screenshot.animation
+    background url('../img/screenshot.gif') top left no-repeat
+    background-size cover
+
+.section-preview
+  .browser-chrome-wrapper
+    position relative
+
+  .browser-shadow
+    position absolute
+    background green
+    bottom 0
+    width 80%
+    height 200px
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #F2F2F2;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.10), 0px 2px 60px 0px rgba(0,0,0,0.19);
+
+    @media screen and (min-width: $screen-is-bigger-than-tablet)
+      max-width $width-tablet - em(160)
+
+    @media screen and (min-width: $screen-is-bigger-than-lg-desktop)
+      max-width $width-sm-desktop - em(160)
+
+  .browser-chrome
+    margin -98px 0 40px 0
+    min-height 250px
+    z-index 10
+
+    @media screen and (min-width: $screen-is-bigger-than-mobile)
+      min-height 400px
+
+    @media screen and (min-width: $screen-is-bigger-than-tablet)
+      margin -199px auto 40px auto
+      max-width $width-tablet - em(40)
+      min-height 400px
+
+    @media screen and (min-width: $screen-is-bigger-than-lg-desktop)
+      margin -450px auto 40px auto
+      max-width $width-sm-desktop - em(40)
+      min-height 500px
+
+.cli-demo
+  margin 20px auto 0 auto

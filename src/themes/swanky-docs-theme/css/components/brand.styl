@@ -1,0 +1,29 @@
+/*
+ * Swanky Site Theme
+ * Branding
+ */
+
+ .brand
+  display block
+  top 50%
+  left 50%
+  position absolute
+  transform translate(-50%, -50%)
+
+  .logo
+    width 200px
+    height 79px
+    background url('../img/swanky-logo.svg') no-repeat
+    background-size @width @height
+
+  .text
+    font-size 2rem
+    text-transform uppercase
+    color #fff
+    display inline-block
+    vertical-align top
+    margin-left 15px
+    margin-top 18px
+
+   &:hover, &:focus
+    text-decoration none
