@@ -1,5 +1,5 @@
 title                   : Swanky Docs
-repo                    : https://github.com/swanky-docs/generator-swanky
+repo                    : https://github.com/swanky-docs/swanky
 version                 : 0.0.0
 src                     : src
 theme                   : src/themes/swanky-docs-theme
