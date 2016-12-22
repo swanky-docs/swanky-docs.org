@@ -1,4 +1,4 @@
-<img src="./img/swanky-docs-logo.png" width="221" height="252" />
+<img src="./img/swanky-docs-logo.png" width="80" height="90" style="margin: 0 auto, display: block" />
 
 # swanky-docs.org
 
