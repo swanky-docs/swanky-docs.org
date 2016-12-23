@@ -11,14 +11,10 @@
   },
   "dependencies": {
     "lodash": "4.17.2",
-    "pixi.js": "^4.1.0",
     "prismjs": "1.6.0"
   },
   "devDependencies": {
-    "babelify": "^7.3.0",
-    "graceful-fs": "4.1.11",
     "http-server": "0.9.0",
-    "ify-loader": "1.0.3",
     "npm-run-all": "3.1.2",
     "rimraf": "2.5.4",
     "swanky": "2.0.2",

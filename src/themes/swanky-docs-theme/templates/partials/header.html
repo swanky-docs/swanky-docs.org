@@ -8,17 +8,24 @@
 
     <title>{$ meta.title $} - {$ title $}</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,600,600italic,300' rel='stylesheet' type='text/css'>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 </head>
 
 <body>
   <header class="{$ styles.header $}">
     <a href="/" class="{$ styles.brand $}"><div class="{$ styles.logo $}"></div></a>
+
+    <ul class="{$ styles.links $}">
+      <li><a href="https://guide.swanky-docs.org/getting-started/setup.html">Get Started</a></li>
+      <li><a href="https://guide.swanky-docs.org/" target="_blank">User Guide</a></li>
+      <li><a href="https://patterns.swanky-docs.org/" target="_blank">Demo</a></li>
+    </ul>
+
     {% if meta.repository %}
       <a href="{$ meta.repository $}" title="{$ siteTitle $} Github Repo" target="_blank" class="{$ styles.github $}"></a>
     {% endif %}
   </header>
   <div id="masthead" class="{$ styles.masthead $}">
-    <p class="{$ styles.intro $}">Swanky Docs is an open source eco system for creating beautiful documentation.</p>
-    <a href="#get-started" title="Learn how to get started with Swanky Docs" class="{$ styles['btn-default'] $}">Get Started</a>
+    <p class="{$ styles.intro $}">A simple, flexible and powerful ecosystem for creating beautiful documentation.</p>
+    <a href="#get-started" title="Learn how to get started with Swanky Docs" class="{$ styles['btn-primary'] $}">Get Started</a>
+    <a href="https://github.com/swanky-docs/swanky/" target="_blank" title="Swanky Docs Github" class="{$ styles['btn-default'] $}">Github</a>
   </div>

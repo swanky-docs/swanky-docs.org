@@ -12,3 +12,24 @@
   border-bottom 1px solid $grey-light
   background #fff
   height 100px
+
+  .links
+    padding 0 100px 0
+    line-height 100px
+    float right
+    display none
+
+    @media screen and (min-width: $screen-is-bigger-than-tablet)
+      display block
+
+    li
+      float left
+      display block
+
+    a
+      color: $black
+      padding 10px
+
+      &:hover
+        text-decoration none
+        color $brand-primary
