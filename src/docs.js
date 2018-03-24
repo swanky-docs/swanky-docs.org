@@ -1,10 +1,3 @@
-if (__DEV__) {
-  module.hot.accept();
-}
-
-// Documentation specific styles
-import './docs.styl';
-
 // Add any javascript here
 if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
   var args = [
