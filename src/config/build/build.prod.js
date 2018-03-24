@@ -1,4 +1,4 @@
-const buildConfig = require('swanky').buildConfig;
+const build = require('swanky').build;
 
 // Retrieve webpack build configuration
-module.exports = buildConfig();
+module.exports = build();
