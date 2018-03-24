@@ -4,7 +4,6 @@ import smoothScroll from './js/smooth-scroll';
 import './css/index.styl';
 
 (() => {
-  console.log('YO')
   smoothScroll.init({
     selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
     speed: 500, // Integer. How fast to complete the scroll in milliseconds
